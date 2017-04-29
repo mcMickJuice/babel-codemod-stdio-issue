@@ -1,0 +1,15 @@
+{
+  "name": "babel-codemod-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "codemod": "codemod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-codemod": "^1.1.2"
+  }
+}
