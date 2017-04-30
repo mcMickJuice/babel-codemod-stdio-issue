@@ -4,12 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "codemod": "codemod"
+    "codemod-class-method": "codemod --require babel-register --plugin ./codemod/classMethodFlowAnnotation.js ./src",
+    "codemod-class-method-stdio": "codemod --require babel-register --plugin ./codemod/classMethodFlowAnnotation.js ./src --stdio",
+    "codemod-noop": "codemod --require babel-register --plugin ./codemod/noop.js ./src",
+    "codemod-noop-stdio": "codemod --require babel-register --plugin ./codemod/noop.js ./src --stdio",
+    "codemod-noop-es5": "codemod --plugin ./codemod/noop-es5.js ./src",
+    "codemod-noop-es5-stdio": "codemod --plugin ./codemod/noop-es5.js ./src --stdio"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "babel-codemod": "^1.1.2"
+    "babel-codemod": "^1.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.24.1"
   }
 }
